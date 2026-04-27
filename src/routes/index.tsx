@@ -91,11 +91,11 @@ function Index() {
         ) : (
           <div className="space-y-6">
             <Tabs value={mode} onValueChange={(v) => setMode(v as "form" | "cv")} className="w-full">
-              <TabsList className="mx-auto grid w-full max-w-md grid-cols-2 bg-muted/60 p-1 h-11">
-                <TabsTrigger value="cv" className="gap-2 data-[state=active]:bg-gradient-hero data-[state=active]:text-primary-foreground">
+              <TabsList className="mx-auto grid w-full max-w-md grid-cols-2 bg-card border p-1 h-11 shadow-soft">
+                <TabsTrigger value="cv" className="gap-2 data-[state=active]:bg-gradient-hero data-[state=active]:text-white data-[state=active]:shadow font-medium">
                   <FileText className="h-4 w-4" /> CV Analyzer
                 </TabsTrigger>
-                <TabsTrigger value="form" className="gap-2 data-[state=active]:bg-gradient-hero data-[state=active]:text-primary-foreground">
+                <TabsTrigger value="form" className="gap-2 data-[state=active]:bg-gradient-hero data-[state=active]:text-white data-[state=active]:shadow font-medium">
                   <ClipboardList className="h-4 w-4" /> Manual Form
                 </TabsTrigger>
               </TabsList>
